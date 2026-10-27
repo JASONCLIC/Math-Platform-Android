@@ -11,6 +11,18 @@ A personal Android project for learning mathematics through practice and interac
 - English and Simplified Chinese resources.
 - Score visualisation and an interactive pet component.
 
+## Screenshots
+
+Real emulator screenshots captured from the original project demonstration recordings, cropped to show the phone display.
+
+| Main menu | Mathematics practice |
+| :---: | :---: |
+| <img src="docs/screenshots/main-menu.png" alt="Math Platform main menu" width="240"> | <img src="docs/screenshots/math-practice.png" alt="Mathematics practice with the interactive pet and answer feedback" width="240"> |
+
+| Math Snake | Math Plane |
+| :---: | :---: |
+| <img src="docs/screenshots/math-snake.png" alt="Mathematical Snake game with number-labelled food and a divisibility challenge" width="240"> | <img src="docs/screenshots/math-plane.png" alt="Mathematical Plane game with arithmetic gates" width="240"> |
+
 ## Project structure
 
 - `app/`: application source, layouts and resources.
