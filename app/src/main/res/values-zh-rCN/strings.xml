@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">数学平台</string>
+    <string name="star">游戏开始</string>
+    <string name="stop">游戏暂停</string>
+    <string name="restar">重新开始</string>
+    <string name="stargame">新游戏</string>
+    <string name="promptstar">点击下方游戏开始按钮，开始游戏</string>
+    <string name="promptrestar">游戏结束，请点击下方重新开始按钮</string>
+    <string name="UP">向上</string>
+    <string name="DWON">向下</string>
+    <string name="LEFT">向左</string>
+    <string name="RIGHT">向右</string>
+    <string name="SCORE">分数:</string>
+    <string name="MOSTSCORE">最高分数:</string>
+    <string name="back">退出游戏</string>
+    <string name="historyscore">点击查看历史最高分数</string>
+    <string name="score">分数：</string>
+    <string name="most_score">最高分数：</string>
+    <string name="h_most_score">最高分数(点击更新)：</string>
+
+    <string name="math_main">数学主页面</string>
+    <string name="math_snake_game">数学版贪吃蛇游戏</string>
+    <string name="math_plane_game">数学版飞机游戏</string>
+    <string name="exit">离开</string>
+
+    <string name="initial_random_number">吃掉两个果子，然后被%1$d整除</string>
+
+    <string name="level_mode">关卡模式</string>
+    <string name="endless_mode">无尽模式</string>
+    <string name="view_high_score">查看最高分数</string>
+
+</resources>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- 原有布局 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/plane">
+
+        <!-- 关卡模式按钮 -->
+        <Button
+            android:id="@+id/button_level_mode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/level_mode"
+            android:layout_marginTop="400dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:background="@drawable/newgame" />
+
+        <!-- 无尽模式按钮 -->
+        <Button
+            android:id="@+id/button_endless_mode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/endless_mode"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:background="@drawable/newgame" />
+
+        <!-- 查看最高分数按钮 -->
+        <Button
+            android:id="@+id/button_view_high_score"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/view_high_score"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:background="@drawable/newgame" />
+
+        <!-- 退出按钮 -->
+        <Button
+            android:id="@+id/button_exit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="50dp"
+            android:background="@drawable/newgame"
+            android:text="@string/exit" />
+    </LinearLayout>
+
+    <!-- 将桌宠布局放在最后 -->
+    <include layout="@layout/pet_layout" />
+</FrameLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 设置按钮背景颜色为透明 -->
+    <solid android:color="@android:color/transparent" />
+    <!-- 圆角边框 -->
+    <corners android:radius="50dp" /> <!-- 圆角半径 -->
+    <stroke
+        android:width="2dp"
+        android:color="#000000" /> <!-- 边框颜色 -->
+</shape>

@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Math-Platform</string>
+    <string name="star">Game begin</string>
+    <string name="stop">Game pause</string>
+    <string name="restar">Restart</string>
+    <string name="stargame">New game</string>
+    <string name="promptstar">Click the Game Start button to start the game</string>
+    <string name="promptrestar">Game over, Click the restart button below</string>
+    <string name="UP">Up</string>
+    <string name="DWON">Down</string>
+    <string name="LEFT">Left</string>
+    <string name="RIGHT">Right</string>
+    <string name="SCORE">Scores:</string>
+    <string name="MOSTSCORE">Highest Scores:</string>
+    <string name="back">Game quit</string>
+    <string name="historyscore">Check Highest Scores</string>
+    <string name="score">Score:</string>
+    <string name="most_score">Highest Score:</string>
+    <string name="h_most_score">Highest Score (Click to refresh):</string>
+
+    <string name="math_main">Math Studying</string>
+    <string name="math_snake_game">Math Snake Game</string>
+    <string name="math_plane_game">Math Plane Game</string>
+    <string name="exit">Exit</string>
+
+    <string name="initial_random_number">Eat two foods,and then divided by %1$d</string>
+
+    <string name="level_mode">Level Mode</string>
+    <string name="endless_mode">Endless Mode</string>
+    <string name="view_high_score">View High Score</string>
+
+</resources>

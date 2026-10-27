@@ -1,0 +1,213 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_space"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f9f9ff">
+
+    <!-- 默认页面内容 (练习页面) -->
+    <LinearLayout
+        android:id="@+id/practice_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="16dp">
+        <TextView
+            android:id="@+id/practice_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Score: 0"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:gravity="center"
+            android:layout_marginBottom="16dp" />
+
+        <!-- 显示数学题目的文本 -->
+        <TextView
+            android:id="@+id/practice_question"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Question will appear here"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:gravity="center"
+            android:layout_marginBottom="16dp" />
+
+        <!-- 用户输入答案 -->
+        <EditText
+            android:id="@+id/practice_answer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your answer here"
+            android:inputType="number"
+            android:gravity="center"
+
+            android:layout_marginBottom="16dp" />
+
+        <!-- 提交答案按钮 -->
+        <Button
+            android:id="@+id/submit_answer_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit Answer"
+            android:textSize="16sp"
+            android:backgroundTint="#4a90e2"
+
+            android:textColor="#ffffff"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- 显示反馈信息 -->
+        <TextView
+            android:id="@+id/practice_feedback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="16sp"
+            android:textColor="#4CAF50"
+            android:gravity="center" />
+    </LinearLayout>
+
+    <!-- Guide 内容区域 -->
+    <ScrollView
+        android:id="@+id/guide_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/multiplication_table"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="#000000"
+                android:gravity="left"
+                android:fontFamily="monospace" /> <!-- 使用等宽字体 -->
+
+        </LinearLayout>
+    </ScrollView>
+
+    <ScrollView
+        android:id="@+id/my_account_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <!-- 显示总得分 -->
+            <TextView
+                android:id="@+id/account_score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Score: 0"
+                android:textSize="18sp"
+                android:textColor="#000000"
+                android:layout_marginBottom="16dp" />
+
+            <!-- 显示正确率 -->
+            <TextView
+                android:id="@+id/account_accuracy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Accuracy: 0%"
+                android:textSize="18sp"
+                android:textColor="#000000"
+                android:layout_marginBottom="16dp" />
+
+            <!-- 添加桌宠开关 -->
+            <Switch
+                android:id="@+id/petSwitch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Show Pet"
+                android:checked="false"
+                android:layout_marginTop="16dp"/>
+
+            <!-- 添加成绩分布图 -->
+            <com.example.android_snack.ScoreChartView
+                android:id="@+id/scoreChart"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"/>
+        </LinearLayout>
+    </ScrollView>
+
+
+    <!-- 底部的按钮布局 -->
+    <LinearLayout
+        android:id="@+id/button_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="16dp"
+        android:background="#ffffff">
+
+        <!-- Practice 按钮 -->
+        <Button
+            android:id="@+id/practice_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Practice"
+            android:textSize="16sp"
+            android:backgroundTint="#6ab04c"
+            android:textColor="#ffffff"
+            android:padding="10dp" />
+
+        <!-- Guide 按钮 -->
+        <Button
+            android:id="@+id/guide_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Guide"
+            android:textSize="16sp"
+            android:backgroundTint="#4a90e2"
+            android:textColor="#ffffff"
+            android:padding="10dp" />
+
+        <!-- Game 按钮 -->
+        <Button
+            android:id="@+id/game_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Game"
+            android:textSize="16sp"
+            android:backgroundTint="#f39c12"
+            android:textColor="#ffffff"
+            android:padding="10dp" />
+
+        <!-- My Account 按钮 -->
+        <Button
+            android:id="@+id/my_account_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="My Account"
+            android:textSize="16sp"
+            android:backgroundTint="#9b59b6"
+            android:textColor="#ffffff"
+            android:padding="10dp" />
+    </LinearLayout>
+
+    <!-- 将桌宠布局移到最后，确保显示在最上层 -->
+    <include layout="@layout/pet_layout" />
+
+</FrameLayout>
